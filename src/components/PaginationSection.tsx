@@ -15,7 +15,7 @@ export const PaginationSection = ({
   return (
     <section>
       <Pagination
-        className="my-10"
+        className="mt-4"
         initialPage={1}
         total={totalPages}
         page={page}

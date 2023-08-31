@@ -19,7 +19,7 @@ export default function Page({ params }: { params: { id: number } }) {
   if (error) return <ErrorMessage message={error.message} />;
 
   return (
-    <div className="flex flex-col gap-4">
+    <div className="flex flex-col gap-8 mt-6">
       <div>
         <Button
           className="bg-white"

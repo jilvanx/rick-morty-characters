@@ -9,21 +9,16 @@ type useStoreProps = {
 };
 
 export const useStore = ({ filterParam, pageParam }: useStoreProps) => {
-  const { addResponseCharacters, addFilter, responseCharacters, filter } =
-    useCharactersStore();
-
-  console.log("🚀 DEGUB -> filterParam:", filterParam);
+  const { addFilter, filter } = useCharactersStore();
 
   const { data, loading, error } = useCharacterList({
     filter: filter ?? filterParam,
-    page: pageParam,
+    page: filterParam === "" ? 1 : pageParam,
   });
 
   useEffect(() => {
     if (filterParam || filterParam === "") addFilter(filterParam);
+  }, [addFilter, data, filterParam]);
 
-    addResponseCharacters(data);
-  }, [addFilter, addResponseCharacters, data, filterParam]);
-
-  return { responseCharacters, loading, error };
+  return { data, loading, error };
 };
