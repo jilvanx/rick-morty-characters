@@ -24,8 +24,7 @@ export default function Page({ params }: { params: { id: number } }) {
         <Button
           className="bg-white"
           startContent={<GoBackIcon />}
-          onClick={() => router.push("/")}
-        >
+          onClick={() => router.push("/")}>
           Go back
         </Button>
       </div>

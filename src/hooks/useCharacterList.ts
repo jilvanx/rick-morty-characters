@@ -22,7 +22,7 @@ export const useCharacterList = (props?: Props) => {
         page: page ?? 0,
         filter: filter ?? "",
       },
-    }
+    },
   );
 
   return { data, loading, error };

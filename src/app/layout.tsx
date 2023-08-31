@@ -40,8 +40,7 @@ export default function RootLayout({
                 isExternal
                 className="flex items-center gap-1 text-current"
                 href="https://www.linkedin.com/in/jilvanx/"
-                title="jilvan linkedin"
-              >
+                title="jilvan linkedin">
                 <span className="text-default-600">Powered by</span>
                 <p className="text-primary">jilvanx</p>
               </Link>

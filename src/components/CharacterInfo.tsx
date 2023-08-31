@@ -1,7 +1,7 @@
-import { CharacterById } from "@/graphql/models";
+import React from "react";
 import { Card, CardBody, Image } from "@nextui-org/react";
 
-import React from "react";
+import { CharacterById } from "@/graphql/models";
 
 type CharacterInfoProps = {
   character: CharacterById;

@@ -13,8 +13,7 @@ export const CharacterCard = ({ character }: CharacterCardProps) => {
     <Card
       className="py-4"
       isPressable
-      onClick={() => router.push(`/character/${character.id}`)}
-    >
+      onClick={() => router.push(`/character/${character.id}`)}>
       <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
         <h4 className="font-bold text-md text-start">{character.name}</h4>
         <small className="text-default-500 text-start">

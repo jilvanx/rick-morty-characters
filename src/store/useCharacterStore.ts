@@ -17,5 +17,5 @@ export const useCharactersStore = create<ResponseCharactersState>()(
         filter,
       }));
     },
-  }))
+  })),
 );

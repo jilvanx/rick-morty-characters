@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Pagination } from "@nextui-org/react";
 
 import { CharacterCard } from "@/components/CharacterCard";
 import { ErrorMessage } from "@/components/ErrorMessage";

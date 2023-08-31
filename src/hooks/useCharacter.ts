@@ -1,4 +1,4 @@
-import { gql, useQuery } from "@apollo/client";
+import { useQuery } from "@apollo/client";
 
 import { ResponseCharacter } from "@/graphql/models";
 import { GET_CHARACTER_BY_ID } from "@/graphql/queries";
@@ -10,7 +10,7 @@ export const useCharacter = (id: number) => {
       variables: {
         id,
       },
-    }
+    },
   );
 
   return { data, error, loading };
