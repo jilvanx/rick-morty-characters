@@ -1,8 +1,6 @@
 import { create } from "zustand";
 import { devtools } from "zustand/middleware";
 
-import { ResponseCharacters } from "@/graphql/models";
-
 type ResponseCharactersState = {
   filter: string;
   addFilter: (filter: string) => void;

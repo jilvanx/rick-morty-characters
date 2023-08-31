@@ -37,7 +37,7 @@ export default function Home() {
           <CharacterCard key={character.id} character={character} />
         ))}
       </div>
-      {!loading && (
+      {!loading && (data?.characters.results.length ?? 0) > 0 && (
         <PaginationSection
           page={page}
           totalPages={totalPages}
