@@ -19,13 +19,13 @@ git clone https://github.com/jilvanx/rick-morty-characters.git
 ```sh
 $ cd rick-morty-characters
 $ yarn install
-$ yarn start
+$ yarn dev
 ```
 
 Or
 
 ```sh
-$ cd sneakers-frontend
+$ cd rick-morty-characters
 $ npm install
 $ npm run dev
 ```
@@ -34,7 +34,7 @@ $ npm run dev
 
 - [Next.js ⚛️](https://reactjs.org) - The React Framework for the Web
 - [NextUI](https://nextui.org/) - Beautiful, fast and modern React UI library
-- [Zustand 🐻️](https://zustand.surge.sh/) - State management solution
+- [Zustand 🐻️](https://zustand-demo.pmnd.rs/) - State management solution
 
 ## Author 💻
 
